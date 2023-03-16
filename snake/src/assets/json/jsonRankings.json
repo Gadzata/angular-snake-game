@@ -1,16 +1,16 @@
 [
   {
-    "name": "Jan",
+    "name": "User1",
     "score": 21,
     "timerSeconds": 5
   },
   {
-    "name": "Feb",
+    "name": "User2",
     "score": 32,
     "timerSeconds": 15
   },
   {
-    "name": "Mar",
+    "name": "User3",
     "score": 19,
     "timerSeconds": 11
   }
