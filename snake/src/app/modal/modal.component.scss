@@ -1,0 +1,81 @@
+jw-modal {
+  display: none;
+
+  .jw-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    overflow: auto;
+  }
+
+  .jw-modal-body {
+    padding: 20px;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    background: #b2bd08;
+  }
+
+  p {
+    margin-top: 10%;
+  }
+
+  button {
+    transition-duration: 0.4s;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border: 2px solid rgba(146, 145, 145, 0.7);
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1% 3% 1% 3%;
+    font-size: 25px;
+  }
+
+  button:hover {
+    background-color: rgba(146, 145, 145, 0.7); /* Green */
+    color: white;
+  }
+
+  button {
+    animation: bounce 0.5s infinite alternate;
+    border-radius: 10%;
+  }
+  @keyframes bounce {
+    to {
+      transform: scale(1.2);
+    }
+  }
+}
+
+body.jw-modal-open {
+  overflow: hidden;
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  border: 2px solid rgba(146, 145, 145, 0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1% 3% 1% 3%;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: rgba(146, 145, 145, 0.7); /* Green */
+  color: white;
+}
+
+button {
+  animation: bounce 0.5s infinite alternate;
+  border-radius: 10%;
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.2);
+  }
+}

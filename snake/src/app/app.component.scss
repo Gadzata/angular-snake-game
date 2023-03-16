@@ -1,0 +1,49 @@
+.styleGameBlock {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+router-outlet ~ * {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+:host ::ng-deep router-outlet + app-game-board {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.test {
+  display: block;
+  width: 500px;
+  margin: auto;
+  border: 5px solid black;
+}
+button {
+  transition-duration: 0.4s;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  border: 2px solid rgba(146, 145, 145, 0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1% 3% 1% 3%;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: rgba(146, 145, 145, 0.7); /* Green */
+  color: white;
+}
+
+button {
+  animation: bounce 0.5s infinite alternate;
+  border-radius: 10%;
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,11 @@
+<div class="divclass">
+  <p>Snake Rankings!</p>
+  <div style="width: 100%; height: 100%">
+    <ul>
+      <li *ngFor="let hero of arr">
+        Name: {{ hero.name }} --Score: {{ hero.score }} Time:
+        {{ hero.timerSeconds }}
+      </li>
+    </ul>
+  </div>
+</div>

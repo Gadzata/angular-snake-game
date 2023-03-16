@@ -1,0 +1,56 @@
+.divclass {
+  display: block;
+  width: 500px;
+  margin: auto;
+  border: 5px solid black;
+  background-color: #b2bd08;
+  margin-top: 5%;
+}
+
+ul {
+  counter-reset: index;
+  padding: 0;
+  max-width: 100%;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+/* List element */
+li {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, rgb(165, 129, 13), orangered);
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

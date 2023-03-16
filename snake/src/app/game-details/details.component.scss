@@ -1,0 +1,29 @@
+img {
+  height: 70px;
+  width: 70px;
+  margin-top: 10%;
+}
+
+.image-cont {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #b2bd08;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #ecf0f1;
+}

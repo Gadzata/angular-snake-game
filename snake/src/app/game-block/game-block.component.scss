@@ -1,0 +1,19 @@
+app-score p,
+app-timer p,
+app-snake-logo p {
+  width: 100%;
+}
+
+app-snake-logo {
+  width: inherit;
+  height: inherit;
+}
+
+.divclass {
+  display: block;
+  width: 500px;
+  margin: auto;
+  border: 8px solid black;
+  margin-top: 5%;
+  box-shadow: -55px -55px 0 -40px rgb(1, 54, 1), 55px 55px 0 -40px rgb(1, 54, 1);
+}
